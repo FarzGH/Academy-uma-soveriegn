@@ -1,27 +1,289 @@
 <!doctype html>
 <html lang="id">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/png" href="https://i.imgur.com/ZcYxqKj.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="../image/Logo Pertama.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title>Academy Uma Sovereign | A'ues Community</title>
-    <meta name="description" content="Komunitas fans Uma Musume & Anime. Wadah interaktif bagi para konten kreator TikTok dan Instagram." />
-    <meta name="author" content="Academy Uma Sovereign" />
-
-    <meta property="og:title" content="Academy Uma Sovereign" />
-    <meta property="og:description" content="Gabung komunitas A'ues sekarang! Wadah kreatif bagi para fans Uma Musume & Anime." />
-    <meta property="og:image" content="https://i.imgur.com/ZcYxqKj.png" />
-    <meta property="og:type" content="website" />
-
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Academy Uma Sovereign" />
-    <meta name="twitter:description" content="Komunitas kreator Uma Musume di TikTok & Instagram." />
-  </head>
-
-  <body>
-    <div id="root"></div>
+    <meta name="description" content="Komunitas A'ues berfokus pada fans Uma Musume & Anime, serta pengembangan konten kreator di TikTok dan Instagram.">
     
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap');
+        body { font-family: 'Plus Jakarta Sans', sans-serif; scroll-behavior: smooth; }
+        .bg-gradient-custom {
+            background: radial-gradient(circle at top, rgba(239, 68, 68, 0.1), transparent 40%), 
+                        linear-gradient(180deg, #ffffff 0%, #fffbeb 100%);
+        }
+        .banner-glow { filter: drop-shadow(0 0 10px rgba(239, 68, 68, 0.3)); }
+    </style>
+</head>
+
+<body class="bg-gradient-custom text-slate-900 min-h-screen">
+    <div id="root">
+        <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b-2 border-red-100 shadow-sm">
+            <div class="max-w-6xl mx-auto px-6 h-20 flex justify-between items-center">
+                <div class="flex items-center gap-3">
+                    <img src="../image/Logas.png" alt="Logo Aues" class="h-12 hover:scale-110 transition-transform">
+                    <span class="font-black text-xl tracking-tighter text-red-600">A'UES<span class="text-yellow-500">.</span></span>
+                </div>
+                <div class="hidden md:flex gap-8 font-bold text-slate-600 text-sm">
+                    <a href="#tentang" class="hover:text-red-600 transition-colors">Beranda/Tentang Kami</a>
+                    <a href="#admin" class="hover:text-red-600 transition-colors">Para Admin</a>
+                    <a href="#partnership" class="hover:text-red-600 transition-colors">Partnership & Media</a>
+                </div>
+                <a href="https://chat.whatsapp.com/EidQqBTQz143yoAmkaYb5y?mode=gi_t" 
+                   class="bg-red-600 text-white px-6 py-2 rounded-full font-bold hover:bg-yellow-400 hover:text-red-900 transition-all shadow-lg text-sm">
+                    Bergabung!!
+                </a>
+            </div>
+        </nav>
+
+        <main>
+            <section class="w-full">
+                <img src="../image/banner atas.png" alt="Banner Atas" class="w-full h-auto object-cover banner-glow">
+            </section>
+
+            <section id="tentang" class="mx-auto max-w-6xl px-6 py-16 flex flex-col md:flex-row items-center gap-12 text-center md:text-left">
+                <div class="md:w-3/5 space-y-6">
+                    <p class="text-sm font-bold uppercase tracking-[0.2em] text-red-600 bg-red-50 inline-block px-3 py-1 rounded">Official Community</p>
+                    <h1 class="text-5xl md:text-6xl font-extrabold text-slate-950 leading-tight">
+                        Academy Uma <span class="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-yellow-500">Sovereign</span>
+                    </h1>
+                    <p class="text-lg leading-relaxed text-slate-600">
+                        <strong>𝗔𝗰𝗮𝗱𝗲𝗺𝘆 𝗨𝗺𝗮 𝗦𝗼𝘃𝗲𝗿𝗲𝗶𝗴𝗻</strong> adalah suatu komunitas <strong>𝗔'𝘂𝗲𝘀</strong> yang berfokus kepada para fans Uma Musume & Anime. Di sini tidak hanya untuk fans Uma saja, melainkan non-Uma juga bisa bergabung sebagai wadah interaktif di TikTok dan Instagram.
+                    </p>
+                    <div class="flex flex-wrap gap-4 pt-4 justify-center md:justify-start">
+                        <a href="https://www.tiktok.com/@academyumasovereign_ofc?_r=1&_t=ZS-95aGn9R95l9" class="bg-black text-white px-6 py-3 rounded-2xl font-bold hover:scale-105 transition-transform flex items-center gap-2">
+                            TikTok Official
+                        </a>
+                        <a href="https://www.instagram.com/academyumasovereign?igsh=Z2dsbnJ2bmRyOGYw" class="bg-gradient-to-tr from-yellow-500 to-red-600 text-white px-6 py-3 rounded-2xl font-bold hover:scale-105 transition-transform flex items-center gap-2">
+                            Instagram Official
+                        </a>
+                    </div>
+                </div>
+                <div class="md:w-2/5">
+                    <img src="../image/uma-1.jpeg" alt="Uma Musume Group" class="rounded-3xl shadow-2xl border-4 border-white transform hover:rotate-2 transition-all duration-500">
+                </div>
+            </section>
+
+       <section id="admin" class="bg-white py-20 border-y border-red-50">
+            <div class="max-w-6xl mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-black mb-4 uppercase tracking-tighter hover:text-red-600 transition-colors cursor-default">Para Admin A'ues</h2>
+                    <p class="text-slate-500 font-medium mb-6">Pilar utama di balik layar Academy Uma Sovereign</p>
+                    <div class="h-1.5 w-32 bg-yellow-400 mx-auto rounded-full"></div>
+                </div>
+                
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                    
+                    <div class="bg-slate-50 p-6 rounded-[2rem] border-2 border-slate-100 hover:border-red-500 hover:bg-white hover:shadow-xl transition-all group">
+                        <img src="https://unavatar.io/tiktok/miyukiasahina" alt="Miyuki Profile" class="w-20 h-20 rounded-full mx-auto mb-4 object-cover shadow-lg group-hover:scale-110 transition-transform border-4 border-white">
+                        <div class="text-center">
+                            <h3 class="font-extrabold text-lg text-slate-900">Miyuki</h3>
+                            <p class="text-red-600 font-black text-[10px] uppercase tracking-widest mb-4">The Progenitor</p>
+                            <a href="https://www.tiktok.com/@miyukiasahina?_r=1&_t=ZS-95bwtA7URAz" class="text-[11px] font-bold text-slate-400 hover:text-black transition-colors border-t border-slate-200 pt-3 block">tiktok.com/@miyukiasahina</a>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-50 p-6 rounded-[2rem] border-2 border-slate-100 hover:border-red-500 hover:bg-white hover:shadow-xl transition-all group">
+                        <img src="https://unavatar.io/tiktok/viaa._10" alt="Viaa Profile" class="w-20 h-20 rounded-full mx-auto mb-4 object-cover shadow-lg group-hover:scale-110 transition-transform border-4 border-white">
+                        <div class="text-center">
+                            <h3 class="font-extrabold text-lg text-slate-900">Viaa</h3>
+                            <p class="text-red-600 font-black text-[10px] uppercase tracking-widest mb-4">The High Inquisitor</p>
+                            <a href="https://www.tiktok.com/@viaa._10?_r=1&_t=ZS-95bySgNNWTA" class="text-[11px] font-bold text-slate-400 hover:text-black transition-colors border-t border-slate-200 pt-3 block">tiktok.com/@viaa._10</a>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-50 p-6 rounded-[2rem] border-2 border-slate-100 hover:border-red-500 hover:bg-white hover:shadow-xl transition-all group">
+                        <img src="https://unavatar.io/tiktok/kalau.yamibana" alt="Kalau Profile" class="w-20 h-20 rounded-full mx-auto mb-4 object-cover shadow-lg group-hover:scale-110 transition-transform border-4 border-white">
+                        <div class="text-center">
+                            <h3 class="font-extrabold text-lg text-slate-900">Kalau</h3>
+                            <p class="text-red-600 font-black text-[10px] uppercase tracking-widest mb-4">Father of Anomaly</p>
+                            <a href="https://www.tiktok.com/@kalau.yamibana" class="text-[11px] font-bold text-slate-400 hover:text-black transition-colors border-t border-slate-200 pt-3 block">tiktok.com/@eien.no.yami204</a>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-50 p-6 rounded-[2rem] border-2 border-slate-100 hover:border-red-500 hover:bg-white hover:shadow-xl transition-all group">
+                        <img src="https://unavatar.io/tiktok/call_me_miaofa" alt="Miaofa Profile" class="w-20 h-20 rounded-full mx-auto mb-4 object-cover shadow-lg group-hover:scale-110 transition-transform border-4 border-white">
+                        <div class="text-center">
+                            <h3 class="font-extrabold text-lg text-slate-900">Miaofa</h3>
+                            <p class="text-red-600 font-black text-[10px] uppercase tracking-widest mb-4">The Keystone</p>
+                            <a href="https://www.tiktok.com/@call_me_miaofa?_r=1&_t=ZS-95bvQ7y4dBA" class="text-[11px] font-bold text-slate-400 hover:text-black transition-colors border-t border-slate-200 pt-3 block">tiktok.com/@call_me_miaofa</a>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-50 p-6 rounded-[2rem] border-2 border-slate-100 hover:border-red-500 hover:bg-white hover:shadow-xl transition-all group">
+                        <img src="https://unavatar.io/tiktok/kuroto_sen" alt="Senko Profile" class="w-20 h-20 rounded-full mx-auto mb-4 object-cover shadow-lg group-hover:scale-110 transition-transform border-4 border-white">
+                        <div class="text-center">
+                            <h3 class="font-extrabold text-lg text-slate-900">Senko</h3>
+                            <p class="text-red-600 font-black text-[10px] uppercase tracking-widest mb-4">The Muse</p>
+                            <a href="https://www.tiktok.com/@kuroto_sen?_r=1&_t=ZS-95bvRwB1ryE" class="text-[11px] font-bold text-slate-400 hover:text-black transition-colors border-t border-slate-200 pt-3 block">tiktok.com/@kuroto_sen</a>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-50 p-6 rounded-[2rem] border-2 border-slate-100 hover:border-red-500 hover:bg-white hover:shadow-xl transition-all group">
+                        <img src="https://unavatar.io/tiktok/dryasokasik" alt="Drya Profile" class="w-20 h-20 rounded-full mx-auto mb-4 object-cover shadow-lg group-hover:scale-110 transition-transform border-4 border-white">
+                        <div class="text-center">
+                            <h3 class="font-extrabold text-lg text-slate-900">Drya</h3>
+                            <p class="text-red-600 font-black text-[10px] uppercase tracking-widest mb-4">The Nexus</p>
+                            <a href="https://tiktok.com/@dryasokasik" class="text-[11px] font-bold text-slate-400 hover:text-black transition-colors border-t border-slate-200 pt-3 block">tiktok.com/@dryasokasik</a>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-50 p-6 rounded-[2rem] border-2 border-slate-100 hover:border-red-500 hover:bg-white hover:shadow-xl transition-all group">
+                        <img src="https://unavatar.io/tiktok/aoi.hikabana" alt="Aoi Profile" class="w-20 h-20 rounded-full mx-auto mb-4 object-cover shadow-lg group-hover:scale-110 transition-transform border-4 border-white">
+                        <div class="text-center">
+                            <h3 class="font-extrabold text-lg text-slate-900">Aoi</h3>
+                            <p class="text-red-600 font-black text-[10px] uppercase tracking-widest mb-4">Mother of Anomaly</p>
+                            <a href="https://www.tiktok.com/@aoi.hikabana?_r=1&_t=ZS-95byHvvU990" class="text-[11px] font-bold text-slate-400 hover:text-black transition-colors border-t border-slate-200 pt-3 block">tiktok.com/@aoi.hikabana</a>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-50 p-6 rounded-[2rem] border-2 border-slate-100 hover:border-red-500 hover:bg-white hover:shadow-xl transition-all group">
+                        <img src="https://unavatar.io/tiktok/natsugulaaren" alt="Kagunat Profile" class="w-20 h-20 rounded-full mx-auto mb-4 object-cover shadow-lg group-hover:scale-110 transition-transform border-4 border-white">
+                        <div class="text-center">
+                            <h3 class="font-extrabold text-lg text-slate-900">Kagunat</h3>
+                            <p class="text-red-600 font-black text-[10px] uppercase tracking-widest mb-4">The Bridge</p>
+                            <a href="https://tiktok.com/@natsugulaaren" class="text-[11px] font-bold text-slate-400 hover:text-black transition-colors border-t border-slate-200 pt-3 block">tiktok.com/@natsugulaaren</a>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-50 p-6 rounded-[2rem] border-2 border-slate-100 hover:border-red-500 hover:bg-white hover:shadow-xl transition-all group">
+                        <img src="https://unavatar.io/tiktok/mejirorafzz" alt="Rafli Profile" class="w-20 h-20 rounded-full mx-auto mb-4 object-cover shadow-lg group-hover:scale-110 transition-transform border-4 border-white">
+                        <div class="text-center">
+                            <h3 class="font-extrabold text-lg text-slate-900">Rafli</h3>
+                            <p class="text-red-600 font-black text-[10px] uppercase tracking-widest mb-4">The Warden</p>
+                            <a href="https://www.tiktok.com/@mejirorafzz?_r=1&_t=ZS-95bycdd14KN" class="text-[11px] font-bold text-slate-400 hover:text-black transition-colors border-t border-slate-200 pt-3 block">tiktok.com/@mejirorafzz</a>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-50 p-6 rounded-[2rem] border-2 border-slate-100 hover:border-red-500 hover:bg-white hover:shadow-xl transition-all group">
+                        <img src="https://unavatar.io/tiktok/zuha1619" alt="Zuhair Profile" class="w-20 h-20 rounded-full mx-auto mb-4 object-cover shadow-lg group-hover:scale-110 transition-transform border-4 border-white">
+                        <div class="text-center">
+                            <h3 class="font-extrabold text-lg text-slate-900">Zuhair</h3>
+                            <p class="text-red-600 font-black text-[10px] uppercase tracking-widest mb-4">Mediator</p>
+                            <a href="https://www.tiktok.com/@zuha1619?_r=1&_t=ZS-95bvoMtb3Mi" class="text-[11px] font-bold text-slate-400 hover:text-black transition-colors border-t border-slate-200 pt-3 block">tiktok.com/@zuha1619</a>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-50 p-6 rounded-[2rem] border-2 border-slate-100 hover:border-red-500 hover:bg-white hover:shadow-xl transition-all group">
+                        <img src="https://unavatar.io/tiktok/lattenaru" alt="Gaffaxy Profile" class="w-20 h-20 rounded-full mx-auto mb-4 object-cover shadow-lg group-hover:scale-110 transition-transform border-4 border-white">
+                        <div class="text-center">
+                            <h3 class="font-extrabold text-lg text-slate-900">Gaffaxy</h3>
+                            <p class="text-red-600 font-black text-[10px] uppercase tracking-widest mb-4">Editorial</p>
+                            <a href="https://www.tiktok.com/@lattenaru?_r=1&_t=ZS-95byPH89PHk" class="text-[11px] font-bold text-slate-400 hover:text-black transition-colors border-t border-slate-200 pt-3 block">tiktok.com/@lattenaru</a>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-50 p-6 rounded-[2rem] border-2 border-slate-100 hover:border-red-500 hover:bg-white hover:shadow-xl transition-all group">
+                        <img src="https://unavatar.io/tiktok/inidimzjir" alt="Dimz Profile" class="w-20 h-20 rounded-full mx-auto mb-4 object-cover shadow-lg group-hover:scale-110 transition-transform border-4 border-white">
+                        <div class="text-center">
+                            <h3 class="font-extrabold text-lg text-slate-900">Dimz</h3>
+                            <p class="text-red-600 font-black text-[10px] uppercase tracking-widest mb-4">Editorial</p>
+                            <a href="https://www.tiktok.com/@inidimzjir?_r=1&_t=ZS-95bwuNdd96N" class="text-[11px] font-bold text-slate-400 hover:text-black transition-colors border-t border-slate-200 pt-3 block">tiktok.com/@inidimzjir</a>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-50 p-6 rounded-[2rem] border-2 border-slate-100 hover:border-red-500 hover:bg-white hover:shadow-xl transition-all group">
+                        <img src="https://unavatar.io/tiktok/kaziro__" alt="Kaziro Profile" class="w-20 h-20 rounded-full mx-auto mb-4 object-cover shadow-lg group-hover:scale-110 transition-transform border-4 border-white">
+                        <div class="text-center">
+                            <h3 class="font-extrabold text-lg text-slate-900">Kaziro</h3>
+                            <p class="text-red-600 font-black text-[10px] uppercase tracking-widest mb-4">Editorial</p>
+                            <a href="https://tiktok.com/@kaziro__" class="text-[11px] font-bold text-slate-400 hover:text-black transition-colors border-t border-slate-200 pt-3 block">tiktok.com/@kaziro__</a>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-50 p-6 rounded-[2rem] border-2 border-slate-100 hover:border-red-500 hover:bg-white hover:shadow-xl transition-all group">
+                        <img src="https://unavatar.io/tiktok/hachimi_2008" alt="Amir Profile" class="w-20 h-20 rounded-full mx-auto mb-4 object-cover shadow-lg group-hover:scale-110 transition-transform border-4 border-white">
+                        <div class="text-center">
+                            <h3 class="font-extrabold text-lg text-slate-900">Amir</h3>
+                            <p class="text-red-600 font-black text-[10px] uppercase tracking-widest mb-4">The inquisitor</p>
+                            <a href="https://www.tiktok.com/@hachimi_2008?_r=1&_t=ZS-95bw7FLfo1P" class="text-[11px] font-bold text-slate-400 hover:text-black transition-colors border-t border-slate-200 pt-3 block">tiktok.com/@hachimi_2008</a>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-50 p-6 rounded-[2rem] border-2 border-slate-100 hover:border-red-500 hover:bg-white hover:shadow-xl transition-all group">
+                        <img src="https://unavatar.io/tiktok/farel_rell0_1" alt="Rell Profile" class="w-20 h-20 rounded-full mx-auto mb-4 object-cover shadow-lg group-hover:scale-110 transition-transform border-4 border-white">
+                        <div class="text-center">
+                            <h3 class="font-extrabold text-lg text-slate-900">Rell</h3>
+                            <p class="text-red-600 font-black text-[10px] uppercase tracking-widest mb-4">Security</p>
+                            <a href="https://tiktok.com/@farel_rell0_1" class="text-[11px] font-bold text-slate-400 hover:text-black transition-colors border-t border-slate-200 pt-3 block">tiktok.com/@farel_rell0_1</a>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-50 p-6 rounded-[2rem] border-2 border-slate-100 hover:border-red-500 hover:bg-white hover:shadow-xl transition-all group">
+                        <img src="https://unavatar.io/tiktok/zens.seygn12" alt="Bagas Profile" class="w-20 h-20 rounded-full mx-auto mb-4 object-cover shadow-lg group-hover:scale-110 transition-transform border-4 border-white">
+                        <div class="text-center">
+                            <h3 class="font-extrabold text-lg text-slate-900">Bagas</h3>
+                            <p class="text-red-600 font-black text-[10px] uppercase tracking-widest mb-4">Security</p>
+                            <a href="https://tiktok.com/@zens.seygn12" class="text-[11px] font-bold text-slate-400 hover:text-black transition-colors border-t border-slate-200 pt-3 block">tiktok.com/@zens.seygn12</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="mt-20 flex justify-center px-4">
+                    <img src="../image/uma-2.jpeg" alt="Uma Musume Admin Section" class="rounded-[3rem] shadow-2xl max-w-full h-auto border-4 border-white rotate-1 hover:rotate-0 transition-all duration-500">
+                </div>
+            </div>
+        </section>
+
+            <section id="partnership" class="py-20">
+                <div class="max-w-6xl mx-auto px-6">
+                    <h2 class="text-3xl font-black text-center mb-16">Partnership & Media</h2>
+
+                    <div class="mb-12">
+                        <h3 class="text-xl font-bold border-l-4 border-red-600 pl-4 mb-8 text-slate-700 uppercase tracking-widest">Media</h3>
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                            <div class="text-center group">
+                                <img src="../image/aus banner.png" alt="A'ues" class="w-full aspect-video object-contain bg-white rounded-2xl shadow-sm border p-4 group-hover:shadow-md transition-all">
+                                <p class="mt-3 font-bold text-slate-700">Academy Uma Sovereign</p>
+                            </div>
+                            <div class="text-center group">
+                                <img src="../image/Umagazine banner.png" alt="Umaganize" class="w-full aspect-video object-contain bg-white rounded-2xl shadow-sm border p-4 group-hover:shadow-md transition-all">
+                                <p class="mt-3 font-bold text-slate-700">Umaganize</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-12">
+                        <h3 class="text-xl font-bold border-l-4 border-yellow-500 pl-4 mb-8 text-slate-700 uppercase tracking-widest">Partnership</h3>
+                        <div class="grid grid-cols-2 md:grid-cols-3 gap-8 text-center">
+                            <div class="group">
+                                <img src="../image/UTA banner.png" alt="UTA" class="w-full aspect-video object-contain bg-white rounded-2xl shadow-sm border p-4 group-hover:shadow-md transition-all">
+                                <p class="mt-3 font-bold text-slate-700">Umazing Trainer Association</p>
+                            </div>
+                            <div class="group">
+                                <img src="../image/NCA banner.jpeg" alt="Nanime" class="w-full aspect-video object-contain bg-white rounded-2xl shadow-sm border p-4 group-hover:shadow-md transition-all">
+                                <p class="mt-3 font-bold text-slate-700">Nanime Creator Aogiri</p>
+                            </div>
+                            <div class="group">
+                                <img src="../image/AUF banner.jpeg" alt="AUF" class="w-full aspect-video object-contain bg-white rounded-2xl shadow-sm border p-4 group-hover:shadow-md transition-all">
+                                <p class="mt-3 font-bold text-slate-700">Academy Uma Family</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 class="text-xl font-bold border-l-4 border-slate-400 pl-4 mb-8 text-slate-700 uppercase tracking-widest">Operational</h3>
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                            <div class="group">
+                                <img src="../image/Origami County.png" alt="Origami" class="w-full aspect-video object-contain bg-white rounded-2xl shadow-sm border p-4 group-hover:shadow-md transition-all">
+                                <p class="mt-3 font-bold text-slate-700">Origami County</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="bg-slate-900 py-16 text-center text-slate-400">
+            <img src="../image/logo.png" alt="Logo" class="h-16 mx-auto mb-6 brightness-110">
+            <p class="mb-4 text-white font-bold">Academy Uma Sovereign &copy; 2026</p>
+            <p class="max-w-md mx-auto text-sm">Tempat berkumpulnya fans Uma Musume & Anime untuk berkreasi di dunia digital.</p>
+        </footer>
+    </div>
+</body>
 </html>
