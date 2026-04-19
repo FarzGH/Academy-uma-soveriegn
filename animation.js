@@ -9,8 +9,8 @@ AOS.init({
 // Ubah teks di HTML menjadi: <span id="typing-text"></span>
 document.addEventListener('DOMContentLoaded', function() {
     const typed = new Typed('#typing-text', {
-        strings: ['Academy Uma Sovereign', 'A\'ueS Community', 'Sovereignty & Unity'],
-        typeSpeed: 60,
+        strings: ['Academy Uma Sovereign', 'A\'ueS Community', 'Sovereignty and Unity'],
+        typeSpeed: 100,
         backSpeed: 40,
         backDelay: 20000, 
         loop: true,
