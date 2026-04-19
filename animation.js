@@ -10,9 +10,9 @@ AOS.init({
 document.addEventListener('DOMContentLoaded', function() {
     const typed = new Typed('#typing-text', {
         strings: ['Academy Uma Sovereign', 'A\'ueS Community', 'Sovereignty and Unity'],
-        typeSpeed: 100,
+        typeSpeed: 60,
         backSpeed: 40,
-        backDelay: 20000, 
+        backDelay: 15000, 
         loop: true,
         showCursor: true,
         cursorChar: '_'
