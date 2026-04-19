@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
         strings: ['Academy Uma Sovereign', 'A\'ueS Community', 'Sovereignty & Unity'],
         typeSpeed: 60,
         backSpeed: 40,
-        backDelay: 60000, // Menunggu 1 menit (60000ms) sebelum dihapus
+        backDelay: 10000, 
         loop: true,
         showCursor: true,
         cursorChar: '_'
