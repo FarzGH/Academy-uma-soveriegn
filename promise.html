@@ -1,0 +1,260 @@
+
+<!doctype html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="./image/Logo Pertama.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academy Uma Sovereign | A'ues Community</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap');
+        body { font-family: 'Plus Jakarta Sans', sans-serif; scroll-behavior: smooth; }
+        .bg-gradient-custom {
+            background: radial-gradient(circle at top, rgba(239, 68, 68, 0.1), transparent 40%), 
+                        linear-gradient(180deg, #ffffff 0%, #fffbeb 100%);
+        }
+        .banner-glow { filter: drop-shadow(0 0 10px rgba(239, 68, 68, 0.3)); }
+    </style>
+</head>
+<body class="bg-gradient-custom text-slate-900 min-h-screen">
+    <div id="root">
+
+        <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b-2 border-red-100 shadow-sm">
+            <div class="max-w-6xl mx-auto px-6 h-20 flex justify-between items-center">
+                <div class="flex items-center gap-3">
+                    <img src="./image/Logas.png" alt="Logo Aues" class="h-12 hover:scale-110 transition-transform">
+                    <span class="font-black text-xl tracking-tighter text-red-600">A'UES<span class="text-yellow-500">.</span></span>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex gap-6 font-bold text-slate-600 text-xs lg:text-sm">
+                    <a href="index.html" class="hover:text-red-600 transition-colors">Beranda</a>
+                    <a href="about.html" class="hover:text-red-600 transition-colors">Tentang Kami</a>
+                    <a href="promise.html" class="hover:text-red-600 transition-colors">Visi Misi</a>
+                    <a href="group.html" class="hover:text-red-600 transition-colors">Isi Group</a>
+                    <a href="admin.html" class="hover:text-red-600 transition-colors">Para Admin</a>
+                    <a href="media.html" class="hover:text-red-600 transition-colors">Media</a>
+                </div>
+
+                <div class="flex items-center gap-4">
+                    <div class="hidden md:block">
+                        
+                <a href="https://chat.whatsapp.com/EidQqBTQz143yoAmkaYb5y?mode=gi_t" 
+                   class="bg-red-600 text-white px-6 py-2 rounded-full font-bold hover:bg-yellow-400 hover:text-red-900 transition-all shadow-lg text-sm">
+                    Bergabung!!
+                </a>
+
+                    </div>
+                    
+                    <!-- Mobile Menu Toggle -->
+                    <button id="menu-btn" class="md:hidden text-slate-600 focus:outline-none">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Mobile Menu Overlay -->
+            <div id="mobile-menu" class="fixed inset-0 z-[100] bg-white transform translate-x-full transition-transform duration-300 ease-in-out md:hidden">
+                <div class="p-6 flex flex-col h-full">
+                    <div class="flex justify-between items-center mb-12">
+                        <div class="flex items-center gap-3">
+                            <img src="./image/Logas.png" alt="Logo Aues" class="h-10">
+                            <span class="font-black text-xl tracking-tighter text-red-600">A'UES.</span>
+                        </div>
+                        <button id="close-btn" class="text-slate-600 focus:outline-none">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                        </button>
+                    </div>
+                    <div class="flex flex-col gap-6 text-xl font-bold text-slate-800">
+                        <a href="index.html" class="hover:text-red-600 transition-colors py-2 border-b border-slate-50">Beranda</a>
+                        <a href="about.html" class="hover:text-red-600 transition-colors py-2 border-b border-slate-50">Tentang Kami</a>
+                        <a href="promise.html" class="hover:text-red-600 transition-colors py-2 border-b border-slate-50">Visi Misi</a>
+                        <a href="group.html" class="hover:text-red-600 transition-colors py-2 border-b border-slate-50">Isi Group</a>
+                        <a href="admin.html" class="hover:text-red-600 transition-colors py-2 border-b border-slate-50">Para Admin</a>
+                        <a href="media.html" class="hover:text-red-600 transition-colors py-2 border-b border-slate-50">Media</a>
+                        <a href="https://chat.whatsapp.com/EidQqBTQz143yoAmkaYb5y?mode=gi_t" class="bg-red-600 text-white px-6 py-4 rounded-2xl text-center shadow-lg mt-4">Bergabung!!</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    <main><section  class="w-full overflow-hidden">
+    <img src="./image/banner atas.png" 
+         alt="Banner Atas" 
+         data-aos="fade-down"
+         class="w-full h-auto object-cover banner-glow"
+         style="
+            -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 85%, rgba(0,0,0,0) 100%);
+            mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 85%, rgba(0,0,0,0) 100%);
+         ">
+</section><section  class="bg-slate-50 py-20 overflow-hidden">
+    <div class="max-w-6xl mx-auto px-6">
+        
+        <div class="flex flex-col md:flex-row items-center gap-12 mb-24">
+            <div class="w-full md:w-1/2" data-aos="fade-right">
+                <img src="./image/uma-visi.png" alt="Visi A'ueS" class="rounded-[2.5rem] shadow-2xl border-4 border-white transform -rotate-2 hover:rotate-0 transition-transform duration-500">
+            </div>
+            <div class="w-full md:w-1/2 text-right" data-aos="fade-left">
+                <h3 class="text-4xl font-black mb-6 text-red-600">VISI</h3>
+                <p class="text-slate-700 leading-relaxed text-lg italic">
+                    "Menjadi pusat inkubasi bagi para kreator Uma Musume dan kreator manapun, Mewujudkan kedaulatan absolut Academy Uma Sovereign sebagai episentrum peradaban komunikasi dan kreativitas media yang agung, di mana harmoni tercipta melalui keteguhan hierarki dan integritas tatanan kerajaan yang abadi."
+                </p>
+            </div>
+        </div>
+
+<div class="flex flex-col-reverse md:flex-row items-center gap-12">
+    <div class="w-full md:w-1/2 text-left" data-aos="fade-right">
+        <h3 class="text-4xl font-black mb-8 text-slate-900 tracking-tighter">MISI</h3>
+        
+        <div class="space-y-6">
+            <div class="group">
+                <h4 class="text-lg font-extrabold text-slate-900 leading-tight group-hover:text-red-600 transition-colors">
+                    <span class="text-red-600 mr-2">01.</span>Stabilitas Internal dan Harmoni Kolektif
+                </h4>
+                <p class="text-sm text-slate-500 mt-1 ml-8 leading-relaxed">
+                    Membangun ekosistem komunikasi yang selaras dan tertib bagi seluruh elemen komunitas, guna menjamin terciptanya lingkungan yang stabil di bawah naungan otoritas tertinggi.
+                </p>
+            </div>
+
+            <div class="group">
+                <h4 class="text-lg font-extrabold text-slate-900 leading-tight group-hover:text-red-600 transition-colors">
+                    <span class="text-red-600 mr-2">02.</span>Manifestasi Persaudaraan dalam Naungan Takhta
+                </h4>
+                <p class="text-sm text-slate-500 mt-1 ml-8 leading-relaxed">
+                    Menyelenggarakan wadah kekeluargaan yang berlandaskan loyalitas, menjadikannya rumah bagi para penggiat media dan konten kreator dari berbagai latar belakang dengan tetap menjunjung tinggi rasa hormat.
+                </p>
+            </div>
+
+            <div class="group">
+                <h4 class="text-lg font-extrabold text-slate-900 leading-tight group-hover:text-red-600 transition-colors">
+                    <span class="text-red-600 mr-2">03.</span>Supremasi Otoritas dan Sakralitas Sistem
+                </h4>
+                <p class="text-sm text-slate-500 mt-1 ml-8 leading-relaxed">
+                    Menjaga kemurnian tata kelola organisasi dengan menempatkan kedudukan Admin dan sistem sebagai pilar utama yang tidak tergoyahkan, demi menjamin keberlangsungan mandat kepemimpinan.
+                </p>
+            </div>
+
+            <div class="group">
+                <h4 class="text-lg font-extrabold text-slate-900 leading-tight group-hover:text-red-600 transition-colors">
+                    <span class="text-red-600 mr-2">04.</span>Representasi Eksternal yang Eksklusif dan Profesional
+                </h4>
+                <p class="text-sm text-slate-500 mt-1 ml-8 leading-relaxed">
+                    Menampilkan citra komunitas di dunia luar dengan standar profesionalisme (sedang), mencerminkan martabat kerajaan dalam setiap interaksi lintas platform dan media.
+                </p>
+            </div>
+
+            <div class="group">
+                <h4 class="text-lg font-extrabold text-slate-900 leading-tight group-hover:text-red-600 transition-colors">
+                    <span class="text-red-600 mr-2">05.</span>Keteguhan Disiplin dan Penegakan Tradisi
+                </h4>
+                <p class="text-sm text-slate-500 mt-1 ml-8 leading-relaxed">
+                    Menerapkan pengawasan ketat terhadap tata tertib baik dalam ruang internal maupun ranah publik, guna memastikan setiap anggota bertindak selaras dengan marwah organisasi.
+                </p>
+            </div>
+
+            <div class="group">
+                <h4 class="text-lg font-extrabold text-slate-900 leading-tight group-hover:text-red-600 transition-colors">
+                    <span class="text-red-600 mr-2">06.</span>Legitimasi Hierarki Monarki yang Absolut
+                </h4>
+                <p class="text-sm text-slate-500 mt-1 ml-8 leading-relaxed">
+                    Menjalankan roda organisasi melalui sistem kerajaan yang kaku dan tersentralisasi, di mana kebijakan bersifat satu arah demi menjaga kesatuan visi tanpa ruang bagi perpecahan.
+                </p>
+            </div>
+
+            <div class="group">
+                <h4 class="text-lg font-extrabold text-slate-900 leading-tight group-hover:text-red-600 transition-colors">
+                    <span class="text-red-600 mr-2">07.</span>Ketentuan Keabadian Entitas
+                </h4>
+                <p class="text-sm text-slate-500 mt-1 ml-8 leading-relaxed">
+                    Menetapkan eksistensi Academy Uma Sovereign sebagai entitas yang bersifat permanen dan tidak dapat diganggu gugat, serta melarang segala bentuk upaya yang merujuk pada pembubaran atau pelemahan struktur komunitas.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="w-full md:w-1/2" data-aos="fade-left">
+        <img src="./image/uma-misi.png" alt="Misi A'ueS" class="rounded-[2.5rem] shadow-2xl border-4 border-white transform rotate-2 hover:rotate-0 transition-transform duration-500">
+    </div>
+</div>
+
+    </div>
+</section><section  class="bg-white py-24">
+    <div class="max-w-6xl mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-black uppercase tracking-widest text-slate-900">Key Pillars</h2>
+            <div class="h-1 w-16 bg-yellow-400 mx-auto mt-4 rounded-full"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+            
+            <div class="bg-white p-10 rounded-[3rem] border-2 border-slate-100 shadow-sm hover:shadow-xl hover:border-red-500 transition-all duration-300" data-aos="zoom-in">
+                <div class="w-16 h-16 bg-red-50 text-red-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+                </div>
+                <h4 class="font-black text-xl mb-4 text-slate-900">Komunitas Yang Solid</h4>
+                <p class="text-slate-600 text-sm leading-relaxed">
+                    A'ueS dibangun atas prinsip loyalitas dan kedaulatan yang tak terjaga. Kekuatan kami terletak pada persatuan anggota yang bergerak dalam satu komando dan satu visi, menciptakan lingkungan yang suportif namun tetap disiplin dalam menjaga keutuhan internal.
+                </p>
+            </div>
+
+            <div class="bg-white p-10 rounded-[3rem] border-2 border-slate-100 shadow-sm hover:shadow-xl hover:border-blue-500 transition-all duration-300" data-aos="zoom-in">
+                <div class="w-16 h-16 bg-blue-50 text-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"></path></svg>
+                </div>
+                <h4 class="font-black text-xl mb-4 text-slate-900">Mediasi & Kolaborasi Strategis</h4>
+                <p class="text-slate-600 text-sm leading-relaxed">
+                    Kami mengutamakan jalur diplomasi dalam setiap interaksi. Dengan sistem komunikasi yang terarah, A'ueS mampu menjalin kemitraan yang produktif dengan pihak luar, memastikan setiap kerja sama berjalan lancar tanpa benturan kepentingan atau ego sektoral.
+                </p>
+            </div>
+
+            <div class="bg-white p-10 rounded-[3rem] border-2 border-slate-100 shadow-sm hover:shadow-xl hover:border-yellow-500 transition-all duration-300" data-aos="zoom-in">
+                <div class="w-16 h-16 bg-yellow-50 text-yellow-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                </div>
+                <h4 class="font-black text-xl mb-4 text-slate-900">Profesionalisme Medan Luar</h4>
+                <p class="text-slate-600 text-sm leading-relaxed">
+                    Setiap anggota dan admin adalah representasi dari kedaulatan A'ueS. Kami menjaga sikap netral dan profesional di ranah publik, memastikan bahwa aturan internal kami tetap tercermin dalam etika eksternal yang dihormati oleh komunitas lain.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section></main>
+      <footer class="bg-slate-900 pt-16 text-center text-slate-400">
+    <div class="pb-12 px-6">
+        <img src="./image/logo.png" alt="Logo" class="h-16 mx-auto mb-6 brightness-110">
+        <p class="mb-2 text-white font-bold text-lg tracking-tight">A'UeS Studio</p>
+        <p class="max-w-md mx-auto text-sm leading-relaxed">
+            Tempat berkumpulnya fans Uma Musume & Anime untuk berkreasi di dunia digital.
+        </p>
+    </div>
+
+    <div class="bg-black/30 py-6 border-t border-white/5">
+        <p class="text-[10px] sm:text-xs uppercase tracking-[0.3em] opacity-50">
+            Copyright &copy; 2026 <span class="text-white/80">A'UeS Studio</span>. All Rights Reserved.
+        </p>
+    </div>
+</footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        AOS.init({ once: true, offset: 100 });
+        
+        // Mobile Menu Script
+        const menuBtn = document.getElementById('menu-btn');
+        const closeBtn = document.getElementById('close-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        if(menuBtn && closeBtn && mobileMenu) {
+            menuBtn.addEventListener('click', () => {
+                mobileMenu.classList.remove('translate-x-full');
+            });
+            closeBtn.addEventListener('click', () => {
+                mobileMenu.classList.add('translate-x-full');
+            });
+        }
+    </script>
+    <script src="animation.js"></script>
+</div></body></html>
