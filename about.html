@@ -1,0 +1,162 @@
+
+<!doctype html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="./image/Logo Pertama.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academy Uma Sovereign | A'ues Community</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap');
+        body { font-family: 'Plus Jakarta Sans', sans-serif; scroll-behavior: smooth; }
+        .bg-gradient-custom {
+            background: radial-gradient(circle at top, rgba(239, 68, 68, 0.1), transparent 40%), 
+                        linear-gradient(180deg, #ffffff 0%, #fffbeb 100%);
+        }
+        .banner-glow { filter: drop-shadow(0 0 10px rgba(239, 68, 68, 0.3)); }
+    </style>
+</head>
+<body class="bg-gradient-custom text-slate-900 min-h-screen">
+    <div id="root">
+
+        <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b-2 border-red-100 shadow-sm">
+            <div class="max-w-6xl mx-auto px-6 h-20 flex justify-between items-center">
+                <div class="flex items-center gap-3">
+                    <img src="./image/Logas.png" alt="Logo Aues" class="h-12 hover:scale-110 transition-transform">
+                    <span class="font-black text-xl tracking-tighter text-red-600">A'UES<span class="text-yellow-500">.</span></span>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex gap-6 font-bold text-slate-600 text-xs lg:text-sm">
+                    <a href="index.html" class="hover:text-red-600 transition-colors">Beranda</a>
+                    <a href="about.html" class="hover:text-red-600 transition-colors">Tentang Kami</a>
+                    <a href="promise.html" class="hover:text-red-600 transition-colors">Visi Misi</a>
+                    <a href="group.html" class="hover:text-red-600 transition-colors">Isi Group</a>
+                    <a href="admin.html" class="hover:text-red-600 transition-colors">Para Admin</a>
+                    <a href="media.html" class="hover:text-red-600 transition-colors">Media</a>
+                </div>
+
+                <div class="flex items-center gap-4">
+                    <div class="hidden md:block">
+                        
+                <a href="https://chat.whatsapp.com/EidQqBTQz143yoAmkaYb5y?mode=gi_t" 
+                   class="bg-red-600 text-white px-6 py-2 rounded-full font-bold hover:bg-yellow-400 hover:text-red-900 transition-all shadow-lg text-sm">
+                    Bergabung!!
+                </a>
+
+                    </div>
+                    
+                    <!-- Mobile Menu Toggle -->
+                    <button id="menu-btn" class="md:hidden text-slate-600 focus:outline-none">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Mobile Menu Overlay -->
+            <div id="mobile-menu" class="fixed inset-0 z-[100] bg-white transform translate-x-full transition-transform duration-300 ease-in-out md:hidden">
+                <div class="p-6 flex flex-col h-full">
+                    <div class="flex justify-between items-center mb-12">
+                        <div class="flex items-center gap-3">
+                            <img src="./image/Logas.png" alt="Logo Aues" class="h-10">
+                            <span class="font-black text-xl tracking-tighter text-red-600">A'UES.</span>
+                        </div>
+                        <button id="close-btn" class="text-slate-600 focus:outline-none">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                        </button>
+                    </div>
+                    <div class="flex flex-col gap-6 text-xl font-bold text-slate-800">
+                        <a href="index.html" class="hover:text-red-600 transition-colors py-2 border-b border-slate-50">Beranda</a>
+                        <a href="about.html" class="hover:text-red-600 transition-colors py-2 border-b border-slate-50">Tentang Kami</a>
+                        <a href="promise.html" class="hover:text-red-600 transition-colors py-2 border-b border-slate-50">Visi Misi</a>
+                        <a href="group.html" class="hover:text-red-600 transition-colors py-2 border-b border-slate-50">Isi Group</a>
+                        <a href="admin.html" class="hover:text-red-600 transition-colors py-2 border-b border-slate-50">Para Admin</a>
+                        <a href="media.html" class="hover:text-red-600 transition-colors py-2 border-b border-slate-50">Media</a>
+                        <a href="https://chat.whatsapp.com/EidQqBTQz143yoAmkaYb5y?mode=gi_t" class="bg-red-600 text-white px-6 py-4 rounded-2xl text-center shadow-lg mt-4">Bergabung!!</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    <main><section  class="w-full overflow-hidden">
+    <img src="./image/banner atas.png" 
+         alt="Banner Atas" 
+         data-aos="fade-down"
+         class="w-full h-auto object-cover banner-glow"
+         style="
+            -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 85%, rgba(0,0,0,0) 100%);
+            mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 85%, rgba(0,0,0,0) 100%);
+         ">
+</section><section  id="tentang" class="mx-auto max-w-6xl px-6 py-16 flex flex-col md:flex-row items-center gap-12 text-center md:text-left">
+                <div class="md:w-3/5 space-y-6">
+                    <p class="text-sm font-bold uppercase tracking-[0.2em] text-red-600 bg-red-50 inline-block px-3 py-1 rounded">Official Community</p>
+                    <h1 class="text-5xl md:text-6xl font-extrabold text-slate-950 leading-tight">
+    <span id="typing-text"></span>
+</h1>
+                    <p class="text-lg leading-relaxed text-slate-600">
+                        <strong>𝗔𝗰𝗮𝗱𝗲𝗺𝘆 𝗨𝗺𝗮 𝗦𝗼𝘃𝗲𝗿𝗲𝗶𝗴𝗻</strong> atau yang lebih dikenal dengan inisial <strong>𝗔'𝘂𝗲𝘀</strong> merupakan sebuah entitas komunitas yang didirikan sebagai pusat titik temu bagi para penggemar fanatik Uma Musume: Pretty Derby serta pecinta anime, game, animasi, sejarah, dll. secara luas. Kami tidak membatasi diri hanya pada satu lingkup fandom; A'ueS lahir dari visi untuk menciptakan ruang inklusif di mana batasan antara "Fans Uma" dan "Non-Uma" dilebur dalam satu semangat apresiasi terhadap karya kreatif. Di sini, setiap anggota diberikan akses untuk saling bertukar informasi, mendalami literatur sejarah pacuan kuda yang menjadi basis karakter, hingga berbagi perkembangan terbaru dalam industri animasi, menjadikan komunitas ini sebagai perpustakaan informasi yang hidup dan dinamis bagi seluruh anggotanya.
+                    </p>
+                    <div class="flex flex-wrap gap-4 pt-4 justify-center md:justify-start">
+                        <a href="https://www.tiktok.com/@academyumasovereign_ofc?_r=1&_t=ZS-95aGn9R95l9" class="bg-black text-white px-6 py-3 rounded-2xl font-bold hover:scale-105 transition-transform flex items-center gap-2">
+                            TikTok Official
+                        </a>
+                        <a href="https://www.instagram.com/academyumasovereign?igsh=Z2dsbnJ2bmRyOGYw" class="bg-gradient-to-tr from-yellow-500 to-red-600 text-white px-6 py-3 rounded-2xl font-bold hover:scale-105 transition-transform flex items-center gap-2">
+                            Instagram Official
+                        </a>
+                    </div>
+                </div>
+                <div class="md:w-2/5">
+                    <img src="./image/uma-1.jpeg" alt="Uma Musume Group" class="rounded-3xl shadow-2xl border-4 border-white transform hover:rotate-2 transition-all duration-500">
+                </div>
+            </section><section  data-aos="fade-up" class="bg-white py-20 border-b border-slate-50">
+    <div class="max-w-4xl mx-auto px-6 text-justify">
+        <h2 class="text-3xl font-black mb-8 text-center uppercase tracking-tighter text-slate-900">Who We Are??</h2>
+        <div class="space-y-6 text-slate-600 leading-relaxed">
+            <p>
+                Academy Uma Sovereign berdiri di atas fondasi Kedaulatan Kepemimpinan yang mutlak dan terstruktur. Kami percaya bahwa sebuah komunitas yang besar memerlukan sistem manajerial yang presisi. Oleh karena itu, A'ueS menerapkan hierarki administrasi yang jelas, di mana setiap administrator memiliki tingkatan status fungsional, mulai dari tingkat dasar hingga otoritas tertinggi. Struktur ini bukan sekadar formalitas, melainkan bentuk tanggung jawab untuk menjaga stabilitas dan efisiensi koordinasi internal.
+            </p>
+            <p>
+                Kedaulatan kami juga tercermin dari ketegasan dalam menegakkan aturan. Komunitas ini menjunjung tinggi supremasi hukum internal yang berlaku mengikat bagi seluruh anggota, baik dalam interaksi di dalam grup maupun perilaku saat membawa identitas komunitas di ranah eksternal. Kami mengadopsi prinsip Netralitas Absolut; A'ueS tidak memihak pada konflik kepentingan mana pun dan selalu menjaga jarak yang objektif terhadap dinamika luar yang tidak relevan. Ketegasan, disiplin, dan integritas adalah identitas utama yang menjadikan kami sebuah organisasi yang berdaulat dan mandiri.
+            </p>
+        </div>
+        <div class="h-1 w-20 bg-red-600 mx-auto mt-10 rounded-full"></div>
+    </div>
+</section></main>
+      <footer class="bg-slate-900 pt-16 text-center text-slate-400">
+    <div class="pb-12 px-6">
+        <img src="./image/logo.png" alt="Logo" class="h-16 mx-auto mb-6 brightness-110">
+        <p class="mb-2 text-white font-bold text-lg tracking-tight">A'UeS Studio</p>
+        <p class="max-w-md mx-auto text-sm leading-relaxed">
+            Tempat berkumpulnya fans Uma Musume & Anime untuk berkreasi di dunia digital.
+        </p>
+    </div>
+
+    <div class="bg-black/30 py-6 border-t border-white/5">
+        <p class="text-[10px] sm:text-xs uppercase tracking-[0.3em] opacity-50">
+            Copyright &copy; 2026 <span class="text-white/80">A'UeS Studio</span>. All Rights Reserved.
+        </p>
+    </div>
+</footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        AOS.init({ once: true, offset: 100 });
+        
+        // Mobile Menu Script
+        const menuBtn = document.getElementById('menu-btn');
+        const closeBtn = document.getElementById('close-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        if(menuBtn && closeBtn && mobileMenu) {
+            menuBtn.addEventListener('click', () => {
+                mobileMenu.classList.remove('translate-x-full');
+            });
+            closeBtn.addEventListener('click', () => {
+                mobileMenu.classList.add('translate-x-full');
+            });
+        }
+    </script>
+    <script src="animation.js"></script>
+</div></body></html>
